@@ -1,0 +1,22 @@
+# Problem 1020 - Age in Days
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        
+        int totalDays = sc.nextInt();
+        int ageInYears = totalDays / 365;
+        int ageInMonths = (totalDays % 365) / 30;
+        int ageInDays = (totalDays % 365) % 30;
+        
+        System.out.println(ageInYears + " ano(s)");
+        System.out.println(ageInMonths + " mes(es)");
+        System.out.println(ageInDays + " dia(s)");
+        
+    }
+ 
+}

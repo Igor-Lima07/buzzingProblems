@@ -1,0 +1,20 @@
+# Problem 1008 - Salary
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner ScannerMtLegal = new Scanner(System.in);
+        
+        int employeNum = ScannerMtLegal.nextInt();
+        int workedHours = ScannerMtLegal.nextInt();
+        float perHour = ScannerMtLegal.nextFloat();
+        float salary = workedHours * perHour;
+        
+        System.out.printf("NUMBER = %d\n", employeNum);
+        System.out.printf("SALARY = U$ %.2f\n", salary);
+    }
+ 
+}

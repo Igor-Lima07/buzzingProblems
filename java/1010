@@ -1,0 +1,25 @@
+# Problem 1010 - Simple Calculate
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        Scanner sc = new Scanner(System.in);
+        int codeProd1 = sc.nextInt();
+        int qntProd1 = sc.nextInt();
+        float priceProd1 = sc.nextFloat();
+        
+        int codeProd2 = sc.nextInt();
+        int qntProd2 = sc.nextInt();
+        float priceProd2 = sc.nextFloat();
+        
+        float priceSum = priceProd1*qntProd1 + priceProd2*qntProd2;
+        
+        System.out.printf("VALOR A PAGAR: R$ %.2f\n", priceSum);
+ 
+    }
+ 
+}
